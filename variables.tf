@@ -6,7 +6,7 @@ variable "region" {
 
 variable "ami" {
   description = "The AMI ID to use for the GitLab server."
-  type        = string
+  type        = string 
   default     = "ami-066784287e358dad1"  # Amazon Linux 2023 AMI for us-east-1
 }
 
