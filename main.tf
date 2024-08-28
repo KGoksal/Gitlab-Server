@@ -11,7 +11,7 @@ resource "aws_vpc" "main" {
 resource "aws_subnet" "main" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.1.0/24"
-  availability_zone = "${var.region}a"  # Availability zone in the region
+  availability_zone = "${var.region}a"  # Availability zone in the region 
 }
 
 # Create a Security Group
