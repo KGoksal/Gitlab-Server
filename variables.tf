@@ -11,7 +11,7 @@ variable "ami" {
 }
 
 variable "instance_type" {
-  description = "The instance type to use for the GitLab server."
+  description = "The instance type to use for the GitLab server." 
   type        = string
   default     = "t2.medium" 
 }
