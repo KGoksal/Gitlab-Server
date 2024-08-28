@@ -73,4 +73,4 @@ output "public_ip" {
 output "public_dns" {
   description = "Public DNS of the GitLab server"
   value       = aws_instance.gitlab_server.public_dns
-}
+} 
