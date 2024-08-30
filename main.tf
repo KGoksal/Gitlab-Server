@@ -57,7 +57,7 @@ resource "aws_instance" "gitlab_server" {
   vpc_security_group_ids = [aws_security_group.gitlab_sg.id]
   subnet_id              = aws_subnet.main.id  # Ensure the instance is in the correct subnet
 
-  user_data = file("${path.module}/user.sh")
+  user_data = file("${path.module}/user.sh") 
 
   tags = {
     Name = "GitLab Server"
